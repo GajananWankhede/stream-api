@@ -1,0 +1,65 @@
+
+Why Stream API:
+
+to process the Collection of Objects to get desire data.
+
+
+intermediate method
+
+map():  return stream after applying some condition.(modification)
+filter(): select elements as per the condition
+sorted(): sort the given stream
+distinct()
+
+
+Terminal method: reduce()
+                 collect()
+				 forEach()
+				 
+				 
+				 
+				 stream --------------- intermediate  method ------------------terminal method
+
+
+Stream  filter()
+
+input is stream and output is also stream
+
+forEach
+
+Stream  limit()  we have 10000 records but i want to process first 1000 records --------
+
+Stream  skip()   skip the first n number of records.
+
+Stream sorted() --- sort the elements
+
+
+list.stream().distinct().sorted().limit
+
+list.stream().limit(200).skip(100).distinct().sorted()
+
+
+list.stream().filter(s->s.startWith('S').
+
+list.stream().map(s->s.upperCase())
+
+
+collect(Collectors.toList)
+reduce()
+forEach()
+
+
+
+
+List<Student> list = new ArrayList();
+
+list.stream().filter(s->s.getGender() == Male).count().collect(Collectors.toList);  450
+
+list.stream().filter(s->s.getGender() == Female).count().collect(Collectors.toList); 550
+
+
+
+
+
+
+  
